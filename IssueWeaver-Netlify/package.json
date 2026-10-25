@@ -1,0 +1,21 @@
+{
+  "name": "issueweaver-netlify",
+  "version": "1.7.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test.mjs && node test-sql.mjs && node test-client.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.57.4"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.11",
+    "esbuild": "0.25.10",
+    "linkedom": "^0.18.14"
+  }
+}

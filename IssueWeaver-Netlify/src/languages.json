@@ -1,0 +1,264 @@
+[
+  {
+    "code": "en-IN",
+    "name": "English",
+    "native": "English",
+    "voice": "Pranav",
+    "questions": [
+      "Give this bug a short title.",
+      "What actually happened?",
+      "How can someone reproduce it?",
+      "What should have happened?",
+      "Where did this happen?",
+      "How often does it happen?"
+    ],
+    "scheduled": false
+  },
+  {
+    "code": "as-IN",
+    "name": "Assamese",
+    "native": "অসমীয়া",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "bn-IN",
+    "name": "Bengali",
+    "native": "বাংলা",
+    "voice": "Kirra",
+    "questions": [
+      "এই সমস্যার একটি ছোট শিরোনাম দিন।",
+      "আসলে কী ঘটেছে?",
+      "সমস্যাটি আবার দেখতে কী কী ধাপ অনুসরণ করতে হবে?",
+      "কী হওয়ার কথা ছিল?",
+      "কোন অ্যাপ, ব্রাউজার বা ডিভাইসে এটি ঘটেছে?",
+      "সমস্যাটি কতবার হয়?"
+    ],
+    "scheduled": true
+  },
+  {
+    "code": "brx-IN",
+    "name": "Bodo",
+    "native": "बड़ो",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "doi-IN",
+    "name": "Dogri",
+    "native": "डोगरी",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "gu-IN",
+    "name": "Gujarati",
+    "native": "ગુજરાતી",
+    "voice": "Falak",
+    "questions": [
+      "આ સમસ્યાને એક ટૂંકું શીર્ષક આપો.",
+      "ખરેખર શું થયું?",
+      "આ સમસ્યા ફરી જોવા માટે કયા પગલાં લેવા જોઈએ?",
+      "શું થવું જોઈએ હતું?",
+      "કઈ એપ, બ્રાઉઝર અથવા ઉપકરણમાં આ થયું?",
+      "આ સમસ્યા કેટલી વાર થાય છે?"
+    ],
+    "scheduled": true
+  },
+  {
+    "code": "hi-IN",
+    "name": "Hindi",
+    "native": "हिन्दी",
+    "voice": "Nalini",
+    "questions": [
+      "इस समस्या को एक छोटा शीर्षक दें।",
+      "असल में क्या हुआ?",
+      "इस समस्या को दोबारा देखने के चरण क्या हैं?",
+      "क्या होना चाहिए था?",
+      "यह किस ऐप, ब्राउज़र या डिवाइस पर हुआ?",
+      "यह समस्या कितनी बार होती है?"
+    ],
+    "scheduled": true
+  },
+  {
+    "code": "kn-IN",
+    "name": "Kannada",
+    "native": "ಕನ್ನಡ",
+    "voice": "Saanvi",
+    "questions": [
+      "ಈ ಸಮಸ್ಯೆಗೆ ಒಂದು ಚಿಕ್ಕ ಶೀರ್ಷಿಕೆ ನೀಡಿ.",
+      "ನಿಜವಾಗಿ ಏನಾಯಿತು?",
+      "ಈ ಸಮಸ್ಯೆಯನ್ನು ಮತ್ತೆ ನೋಡಲು ಯಾವ ಹಂತಗಳನ್ನು ಅನುಸರಿಸಬೇಕು?",
+      "ಏನಾಗಬೇಕಿತ್ತು?",
+      "ಯಾವ ಆಪ್, ಬ್ರೌಸರ್ ಅಥವಾ ಸಾಧನದಲ್ಲಿ ಇದು ಸಂಭವಿಸಿತು?",
+      "ಈ ಸಮಸ್ಯೆ ಎಷ್ಟು ಬಾರಿ ಸಂಭವಿಸುತ್ತದೆ?"
+    ],
+    "scheduled": true
+  },
+  {
+    "code": "ks-IN",
+    "name": "Kashmiri",
+    "native": "کٲشُر",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "kok-IN",
+    "name": "Konkani",
+    "native": "कोंकणी",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "mai-IN",
+    "name": "Maithili",
+    "native": "मैथिली",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "ml-IN",
+    "name": "Malayalam",
+    "native": "മലയാളം",
+    "voice": "Reshma",
+    "questions": [
+      "ഈ പ്രശ്നത്തിന് ഒരു ചെറിയ തലക്കെട്ട് നൽകുക.",
+      "യഥാർത്ഥത്തിൽ എന്താണ് സംഭവിച്ചത്?",
+      "പ്രശ്നം വീണ്ടും കാണാൻ ഏതൊക്കെ ഘട്ടങ്ങൾ പിന്തുടരണം?",
+      "എന്താണ് സംഭവിക്കേണ്ടിയിരുന്നത്?",
+      "ഏത് ആപ്പിലോ ബ്രൗസറിലോ ഉപകരണത്തിലോ ആണ് ഇത് സംഭവിച്ചത്?",
+      "ഈ പ്രശ്നം എത്ര തവണ സംഭവിക്കുന്നു?"
+    ],
+    "scheduled": true
+  },
+  {
+    "code": "mni-IN",
+    "name": "Manipuri (Meitei)",
+    "native": "ꯃꯤꯇꯩꯂꯣꯟ",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "mr-IN",
+    "name": "Marathi",
+    "native": "मराठी",
+    "voice": "Zahira",
+    "questions": [
+      "या समस्येला एक छोटे शीर्षक द्या.",
+      "प्रत्यक्षात काय झाले?",
+      "ही समस्या पुन्हा पाहण्यासाठी कोणत्या पायऱ्या कराव्या लागतील?",
+      "काय व्हायला हवे होते?",
+      "कोणत्या अ‍ॅप, ब्राउझर किंवा उपकरणावर हे घडले?",
+      "ही समस्या किती वेळा येते?"
+    ],
+    "scheduled": true
+  },
+  {
+    "code": "ne-IN",
+    "name": "Nepali",
+    "native": "नेपाली",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "or-IN",
+    "name": "Odia",
+    "native": "ଓଡ଼ିଆ",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "pa-IN",
+    "name": "Punjabi",
+    "native": "ਪੰਜਾਬੀ",
+    "voice": "Mehuli",
+    "questions": [
+      "ਇਸ ਸਮੱਸਿਆ ਨੂੰ ਇੱਕ ਛੋਟਾ ਸਿਰਲੇਖ ਦਿਓ।",
+      "ਅਸਲ ਵਿੱਚ ਕੀ ਹੋਇਆ?",
+      "ਇਹ ਸਮੱਸਿਆ ਦੁਬਾਰਾ ਵੇਖਣ ਲਈ ਕਿਹੜੇ ਕਦਮ ਕਰਨੇ ਪੈਣਗੇ?",
+      "ਕੀ ਹੋਣਾ ਚਾਹੀਦਾ ਸੀ?",
+      "ਕਿਹੜੇ ਐਪ, ਬ੍ਰਾਊਜ਼ਰ ਜਾਂ ਡਿਵਾਈਸ ਉੱਤੇ ਇਹ ਹੋਇਆ?",
+      "ਇਹ ਸਮੱਸਿਆ ਕਿੰਨੀ ਵਾਰ ਆਉਂਦੀ ਹੈ?"
+    ],
+    "scheduled": true
+  },
+  {
+    "code": "sa-IN",
+    "name": "Sanskrit",
+    "native": "संस्कृतम्",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "sat-IN",
+    "name": "Santali",
+    "native": "ᱥᱟᱱᱛᱟᱲᱤ",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "sd-IN",
+    "name": "Sindhi",
+    "native": "سنڌي",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "ta-IN",
+    "name": "Tamil",
+    "native": "தமிழ்",
+    "voice": "Asmita",
+    "questions": [
+      "இந்தப் பிழைக்கு ஒரு சிறிய தலைப்பு கொடுங்கள்.",
+      "உண்மையில் என்ன நடந்தது?",
+      "இந்தப் பிழையை மீண்டும் காண என்ன படிகளைப் பின்பற்ற வேண்டும்?",
+      "என்ன நடந்திருக்க வேண்டும்?",
+      "எந்த செயலி, உலாவி அல்லது சாதனத்தில் இது நடந்தது?",
+      "இந்தப் பிழை எத்தனை முறை ஏற்படுகிறது?"
+    ],
+    "scheduled": true
+  },
+  {
+    "code": "te-IN",
+    "name": "Telugu",
+    "native": "తెలుగు",
+    "voice": "Suhana",
+    "questions": [
+      "ఈ సమస్యకు ఒక చిన్న శీర్షిక చెప్పండి.",
+      "నిజంగా ఏమి జరిగింది? కనిపించిన లోపాన్ని వివరించండి.",
+      "ఈ సమస్యను మళ్ళీ చూడటానికి ఏ దశలు అనుసరించాలి?",
+      "మీరు ఏ ఫలితాన్ని ఆశించారు?",
+      "ఏ యాప్, బ్రౌజర్ లేదా పరికరంలో ఈ సమస్య వచ్చింది?",
+      "ఈ సమస్య ఎంత తరచుగా వస్తుంది?"
+    ],
+    "scheduled": true
+  },
+  {
+    "code": "ur-IN",
+    "name": "Urdu",
+    "native": "اردو",
+    "voice": null,
+    "questions": [],
+    "scheduled": true
+  },
+  {
+    "code": "und",
+    "name": "Other language",
+    "native": "Type in any script",
+    "voice": null,
+    "questions": [],
+    "scheduled": false
+  }
+]
