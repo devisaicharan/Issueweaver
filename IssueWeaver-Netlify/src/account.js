@@ -24,13 +24,21 @@ async function supabaseTransport(path,options={}){
  throw Error('Unknown account request');
 }
 async function downloadEvidence(item){try{const response=await supabaseTransport('reports/'+encodeURIComponent(item.id)+'/attachment');const url=URL.createObjectURL(await response.blob());const link=document.createElement('a');link.href=url;link.download=item.attachment_name||'screenshot';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000)}catch(e){toast(e.message)}}
-async function refreshVoice(){try{const response=await window.iwVoiceFetch('/api/status'),data=await response.json();serverReady=!!data.configured;voiceReady=serverReady;syncVoiceControls();$('connectionBadge').textContent=voiceReady?'Voice ready':authenticatedUser?'Text mode':'Sign in for voice';$('connectionBadge').classList.toggle('pending',!voiceReady)}catch{status('Voice connection unavailable. Typed reports still work.',true)}}
+async function refreshVoice(){try{const response=await window.iwVoiceFetch('/api/status'),data=await response.json();serverReady=!!data.configured;voiceReady=serverReady;syncVoiceControls();$('connectionBadge').textContent=voiceReady?'Voice ready':authenticatedUser?'Text mode':'Sign in for voice';$('connectionBadge').classList.toggle('pending',!voiceReady);if(!authenticatedUser)status('Sign in with Google to record answers and hear questions. You can type without signing in.');else if(!voiceReady)status('Voice is temporarily unavailable. You can keep typing your report.',true)}catch{status('Voice connection unavailable. Typed reports still work.',true)}}
+function updateSignInUI(){
+ const signedIn=!!authenticatedUser;
+ $('voiceWelcome').classList.toggle('hidden',signedIn);
+ $('signinNote').textContent=signedIn?'Your account is connected':'Sign in for voice and account saving';
+ $('accountLink').textContent=signedIn?'Sign out':'Continue with Google';
+ $('accountLink').setAttribute('aria-label',signedIn?'Sign out':'Continue with Google to use voice and save reports');
+}
 window.iwAccountInit=()=>{
+ $('voiceSignIn').onclick=()=>$('accountLink').click();
  $('accountLink').onclick=async event=>{event.preventDefault();await accountReady;try{
  if(authenticatedUser){if(busy||cloudWriting){toast('Wait for the current operation to finish.');return}if(cloudDirty&&!confirm('Some changes are only saved in this browser. Sign out anyway?'))return;cloudReady=false;cloudPaused=true;clearTimeout(cloudTimer);const {error}=await sb.auth.signOut({scope:'local'});if(error)throw error;cloudDirty=false;location.replace('/');return}
  if(accountInitializationError)accountInitializationError=null;
  const {error}=await sb.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+'/'}});if(error)throw error;
  }catch(e){cloudMessage(e.message)}};
- sb.auth.onAuthStateChange((event,session)=>{if(event==='SIGNED_OUT'&&authenticatedUser){authenticatedUser=null;cloudReady=false;cloudPaused=true;clearTimeout(cloudTimer);$('cloudActions').classList.add('hidden');$('cloudList').replaceChildren();$('accountName').textContent='';$('accountLink').textContent='Continue with Google';cloudMessage('Signed out. Browser recovery copies remain on this device.');setTimeout(refreshVoice,0)}});
- accountReady.then(()=>{const params=new URLSearchParams(location.search);if(params.has('error_description'))cloudMessage(params.get('error_description'));if(params.has('code')||params.has('error_description'))history.replaceState(null,'','/');refreshVoice()});
+ sb.auth.onAuthStateChange((event,session)=>{if(event==='SIGNED_OUT'&&authenticatedUser){authenticatedUser=null;updateSignInUI();cloudReady=false;cloudPaused=true;clearTimeout(cloudTimer);$('cloudActions').classList.add('hidden');$('cloudList').replaceChildren();$('accountName').textContent='';$('accountLink').textContent='Continue with Google';cloudMessage('Signed out. Browser recovery copies remain on this device.');setTimeout(refreshVoice,0)}});
+ accountReady.then(()=>{updateSignInUI();const params=new URLSearchParams(location.search);if(params.has('error_description'))cloudMessage(params.get('error_description'));if(params.has('code')||params.has('error_description'))history.replaceState(null,'','/');refreshVoice()});
 };
