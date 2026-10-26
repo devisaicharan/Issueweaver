@@ -5,7 +5,8 @@ if(Number(process.versions.node.split('.')[0])<22)throw Error('Install Node.js 2
 console.log('IssueWeaver deployment. Create a NEW Netlify site when asked. Do not select CampusOS.');
 run('npm',['ci']);
 run('npx',['--yes',CLI,'login']);
-if(!fs.existsSync('.netlify/state.json'))run('npx',['--yes',CLI,'sites:create']);
+if(fs.existsSync('.netlify/state.json'))throw Error('Existing Netlify site detected. Helper stopped to protect live configuration.');
+run('npx',['--yes',CLI,'sites:create']);
 // Only public Supabase configuration is sent here. No Gnani key is read.
 run('npx',['--yes',CLI,'env:set','SUPABASE_URL','https://flyxghrdeldpnlgwgoyg.supabase.co']);
 run('npx',['--yes',CLI,'env:set','SUPABASE_PUBLISHABLE_KEY','sb_publishable_EaiBmyQWmTdS_HivJf6tcg_oeMW3SYR']);
