@@ -1,15 +1,15 @@
 # Blank page after Google sign-in
 
 ## Actual behaviour
-The page goes blank after selecting a Google account during sign-in.
+The reporter says the page goes blank after selecting a Google account during sign-in.
 
 ## Steps to reproduce
+Partial:
 1. Click Sign in with Google.
 2. Select a Google account.
-3. Observe the page after selecting the account.
 
 ## Expected behaviour
-The dashboard should appear.
+The reporter expected to see the dashboard.
 
 ## Environment
 Chrome on Windows 11.
@@ -24,4 +24,4 @@ Not provided
 
 ---
 
-Created with IssueWeaver. User-provided answers; no inferred root cause.
+Created with IssueWeaver. Report fields contain only reporter-supplied facts.
