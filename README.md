@@ -27,6 +27,10 @@ IssueWeaver guides users through six questions to describe a software bug. Speak
 
 Answers map directly to report fields. The app does not automatically translate answers, infer a root cause, or create GitHub issues.
 
+## Assistant integrations
+
+Draft IssueWeaver reports in Codex, Claude Code, or OpenClaw. See the [installation guide and example](integrations/README.md).
+
 ## Tech stack
 
 | Component | Technology |
